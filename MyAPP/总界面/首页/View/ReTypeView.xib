@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1421" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ReHeaderView">
+            <connections>
+                <outlet property="typeView" destination="b6A-6w-kNo" id="PkV-Wv-ggz"/>
+                <outlet property="typeWidth" destination="1L4-gP-v6y" id="sZp-2H-Mtw"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="415" height="88"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RXR-4u-9Dj">
+                    <rect key="frame" x="0.0" y="0.0" width="415" height="88"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b6A-6w-kNo">
+                            <rect key="frame" x="0.0" y="0.0" width="415" height="88"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="415" id="1L4-gP-v6y"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="b6A-6w-kNo" firstAttribute="centerY" secondItem="RXR-4u-9Dj" secondAttribute="centerY" id="DLd-zt-3j5"/>
+                        <constraint firstItem="b6A-6w-kNo" firstAttribute="top" secondItem="RXR-4u-9Dj" secondAttribute="top" id="LAl-Yv-xqr"/>
+                        <constraint firstAttribute="trailing" secondItem="b6A-6w-kNo" secondAttribute="trailing" id="NWC-on-REx"/>
+                        <constraint firstAttribute="bottom" secondItem="b6A-6w-kNo" secondAttribute="bottom" id="eVF-J7-zA2"/>
+                        <constraint firstItem="b6A-6w-kNo" firstAttribute="leading" secondItem="RXR-4u-9Dj" secondAttribute="leading" id="xCF-I3-51d"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="showsHorizontalScrollIndicator" value="NO"/>
+                    </userDefinedRuntimeAttributes>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="RXR-4u-9Dj" secondAttribute="bottom" id="A9U-OS-Xcv"/>
+                <constraint firstItem="RXR-4u-9Dj" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="BtJ-XY-sV1"/>
+                <constraint firstAttribute="trailing" secondItem="RXR-4u-9Dj" secondAttribute="trailing" id="eXq-uA-M6e"/>
+                <constraint firstItem="RXR-4u-9Dj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="i91-AF-T8O"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-75" y="-233"/>
+        </view>
+    </objects>
+</document>

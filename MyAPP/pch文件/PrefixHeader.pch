@@ -1,0 +1,74 @@
+//
+//  PrefixHeader.pch
+//  大麦大麦！
+//
+//  Created by zhangming on 17/1/12.
+//  Copyright © 2017年 youjiesi. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#define HXWeakSelf __weak typeof(self) weakSelf = self;
+#define CLASSNAME NSString *className = NSStringFromClass([self class]);
+#define ScreenBounds [[UIScreen mainScreen] bounds]
+#define ScreenWidth [[UIScreen mainScreen] bounds].size.width
+#define ScreenHeight [[UIScreen mainScreen] bounds].size.height
+// 设置颜色
+/*
+ RGBAlpha(255, 255, 255)
+ */
+#define RGB(r, g, b)                [UIColor colorWithRed:((r) / 255.0) green:((g) / 255.0) blue:((b) / 255.0) alpha:1.0]
+#define SetColor(r, g, b) [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:1.0f]
+#define SetAColor(r, g, b, a) [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:(a)]
+#define TABBGCOLOR [UIColor colorWithHexString:@"#f6f6f6"]
+#define NAVBARCOLOR [UIColor colorWithHexString:@"#F4153D"]
+
+#define BASEFONT @"迷你简启体"
+
+#define RECOMMEND @"推荐";
+#define SHOW @"演出"
+#define DISCOVER @"发现"
+#define ME @"我的"
+
+//通知
+#define NOTIFY_LOGINOUT @"退出登录"
+#define NOTIFY_LOGIN @"登陆"
+#define NOTIFY_HEADIM @"更换头像"
+#define NOTIFY_CHANGENAME @"修改昵称"
+#define NOTIFY_TYPESELECT @"选择类型"
+#define NOTIFY_CITYSELECT @"选择城市"
+
+#import "Tools.h"
+#import "SingleClass.h"
+#import "UIView+Extension.h"
+#import "UIColor+Extension.h"
+#import "UIImage+Extension.h"
+#import "UIButton+Extension.h"
+#import "UILabel+Extension.h"
+#import "UIBarButtonItem+Extension.h"
+#import "NSDate+Extension.h"
+#import "CityInformationModel.h"
+#import "MBProgressHUD+Add.h"
+#import "BaseViewController.h"
+#import <FMDB.h>
+#import <Masonry.h>
+#import <SDWebImage/UIImageView+WebCache.h>
+#import <ReactiveCocoa.h>
+#import <Masonry.h>
+#import "MJRefresh.h"
+#import "HXRefreshHeader.h"
+#import "SelectCityModel.h"
+#import "HttpSessionManager.h"
+#import "HttpTool.h"
+#import "MJExtension.h"
+#import "LoadingView.h"
+#import "ErrorView.h"
+#import "UIScrollView+EmptyDataSet.h"
+#import "LXAlertView.h"
+#import "SVProgressHUD.h"
+#import "NSString+Extension.h"
+#import "BAButton.h"
+
+
+#endif /* PrefixHeader_pch */
